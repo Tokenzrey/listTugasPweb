@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	display: table;
+
+	font-family: Rubik, sans-serif;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #000;
+}
+
+.content {
+	width: 400px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-align: left;
+	background-color: whitesmoke;
+	border-radius: 0.7em;
+	padding: 35px;
+}
+.content .content-input div {
+	.name-suggestion ul {
+		list-style: none;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	margin-bottom: 20px;
+}
+.fld {
+	width: 20em;
+	height: 3rem;
+}
+
+.slt {
+	width: 20.25em;
+	font-weight: bold;
+	height: 3rem;
+	margin-left: -0.3rem;
+}
+
+.slt::placeholder {
+	color: rgb(109, 109, 109);
+}
+
+.fld::placeholder {
+	color: rgba(128, 128, 128, 0.568);
+}
+
+.fld:focus,
+.slt:focus,
+.ta:focus {
+	outline: none;
+	transition: ease 1s;
+	border-bottom-color: black;
+}
+
+.msg,
+.ta {
+	width: 20em;
+	font-family: Rubik, sans-serif;
+	height: 6rem;
+	margin-bottom: 2.5rem;
+	resize: none;
+}
+
+.ta::placeholder {
+	color: rgba(128, 128, 128, 0.568);
+}
+
+#form-tittle {
+	text-align: center;
+	font-weight: bold;
+}
+#form-tittle span {
+	color: red;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+}
+.name,
+.services,
+.budget,
+.msg,
+.email {
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+}
+
+label {
+	font-size: small;
+	color: gray;
+}
+
+.fld,
+.ta,
+.slt {
+	border: none;
+	background-color: whitesmoke;
+	font-size: large;
+	border-bottom: 2px solid rgba(128, 128, 128, 0.616);
+}
+
+.btn {
+	border: none;
+	font-weight: bold;
+	width: 22.5rem;
+	background-color: #000;
+	border-radius: 2rem;
+	height: 2.5rem;
+	color: whitesmoke;
+}
+
+.btn:hover {
+	transition: ease-in 0.1s;
+	background-color: whitesmoke;
+	border: 1.5px solid #000;
+	color: #000;
+	cursor: pointer;
+}
