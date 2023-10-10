@@ -1,0 +1,295 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+	font-family: "Open Sans", sans-serif;
+	src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@500&display=swap");
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* Hide the scrollbar for all elements */
+::-webkit-scrollbar {
+	display: none;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	width: 100vw;
+	height: auto;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	background-color: var(--background-page);
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+/* Warna */
+:root {
+	--background-page: #0b0c10;
+	--secondary-color: rgba(5, 56, 107, 1);
+	--third-color: #1f2833;
+	--fourth-color: #66fcf1;
+	--text-color-1: #edf5e1;
+	--text-color-2: #c5c6c7;
+	--primary-color-light: #f6f5ff;
+	--line-color: #ddd;
+}
+
+.judul {
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: "Bebas Neue", sans-serif;
+}
+.judul h1 {
+	height: 60%;
+	transform: translateY(20vh);
+	color: var(--text-color-1);
+	font-size: 17vh;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.waves {
+	position: relative;
+	width: 100%;
+	height: 30vh;
+	margin-bottom: -7px; /*Fix for safari gap*/
+	min-height: 20vh;
+	max-height: 35vh;
+}
+
+/* Animation */
+
+.parallax > use {
+	animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+	animation-delay: -1s;
+	animation-duration: 8s;
+}
+.parallax > use:nth-child(2) {
+	animation-delay: -1.5s;
+	animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+	animation-delay: -2s;
+	animation-duration: 12s;
+}
+.parallax > use:nth-child(4) {
+	animation-delay: -2.5s;
+	animation-duration: 14s;
+}
+.parallax > use:nth-child(5) {
+	animation-delay: -3s;
+	animation-duration: 16s;
+}
+@keyframes move-forever {
+	0% {
+		transform: translate3d(-90px, 0, 0);
+	}
+	100% {
+		transform: translate3d(85px, 0, 0);
+	}
+}
+
+.section {
+	background-color: var(--secondary-color);
+	padding-top: 10vh;
+	> .subsection:nth-child(1) {
+		color: #ffff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.card-information {
+			color: #ffff;
+			z-index: 2;
+			width: auto;
+			height: auto;
+			position: relative;
+			top: 10vh;
+			opacity: 0;
+			transition: all 0.2s ease-in-out;
+		}
+		.card-information h1 {
+			margin: 0;
+			padding: 0;
+		}
+		.card {
+			overflow: hidden;
+			position: relative;
+			z-index: 10;
+			background-color: var(--background-page);
+			border-radius: 12px;
+			border: 2px solid var(--text-color-2);
+			height: 400px;
+			width: 95%;
+			display: flex;
+
+			.card-right {
+				z-index: 5;
+				width: 30%;
+				border-radius: 10px 0 0 10px;
+				border-right: 2px solid var(--text-color-2);
+				height: 100%;
+				background-image: url("../images/Snapinsta.app_348868565_201216629474238_1056238501882675099_n_1080.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+			.card-left {
+				z-index: 5;
+				width: 70%;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				.card-left-section {
+					height: calc(100% / 5);
+					font-size: 25px;
+					letter-spacing: 1px;
+					.information {
+						height: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					.information h1 {
+						font-size: 40px;
+						margin: 0;
+						padding: 0;
+					}
+				}
+				.card-left-section span {
+					color: var(--background-page);
+					background-color: var(--text-color-1);
+					position: absolute;
+					left: 30%;
+					margin: 0;
+					padding: auto 0;
+					width: 70%;
+					height: calc(100% / 6);
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					transition: all 0.2s ease-in-out;
+					transform: scale(1, 0);
+					transform-origin: center;
+					margin-left: 0.5px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				.card-left-section:hover span,
+				.card-left-section:focus span {
+					transform: scale(1, 1);
+					transform-origin: center;
+				}
+			}
+		}
+	}
+	.subsection:nth-child(1):hover .card-information {
+		opacity: 1;
+		top: 0;
+	}
+}
+.personal-info {
+	padding: 2vh 2.5vw;
+	.subsection {
+		background: rgba(255, 255, 255, 0.25);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(4px);
+		-webkit-backdrop-filter: blur(4px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		padding: 10px;
+		margin-bottom: 2vh;
+		.subsection-header h2 {
+			margin: 0;
+		}
+		/* styling body */
+		.container {
+			max-width: 1200px;
+			margin: auto;
+		}
+		.container h2{
+			margin: 0;
+		}
+		.container h1 {
+			color: white;
+		}
+
+		/* anchor tag decoration */
+		.container a {
+			text-decoration: none;
+			color: #5673c8;
+		}
+
+		.container a:hover {
+			color: lightblue;
+		}
+
+		/* paragraph tag decoration */
+		.container p {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+			overflow: hidden;
+		}
+
+		/* row and column decoration */
+		.container .row {
+			margin: 0px -18px;
+			padding: 8px;
+		}
+
+		.container .row > .column {
+			padding: 6px;
+		}
+
+		.container .column {
+			float: left;
+			width: 25%;
+		}
+
+		.container .row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* content decoration */
+		.container .content {
+			border-radius: 13px;
+			background-color: white;
+			padding: 13px 12px;
+			border: 1px solid gray;
+		}
+
+		/* window size 850 width set */
+		@media screen and (max-width: 850px) {
+			.container .column {
+				width: 50%;
+			}
+		}
+
+		/* window size 400 width set */
+		@media screen and (max-width: 400px) {
+			.container .column {
+				width: 100%;
+			}
+		}
+	}
+}
