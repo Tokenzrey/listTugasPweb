@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<link rel="stylesheet" href="assets/asset.css" />
+		<link rel="stylesheet" href="assets/card.css" />
+		<link rel="stylesheet" href="assets/search.css" />
+		<link rel="stylesheet" href="css/navbar.css" />
+		<link rel="stylesheet" href="css/home.css" />
+		<link rel="stylesheet" href="css/library.css" />
+		<link rel="stylesheet" href="css/info.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<title>Perpustakaan</title>
+	</head>
+	<body>
+		<div class="navbar">
+			<a class="icon-navbar" href="#home">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="40"
+					height="40"
+					viewBox="0 0 48 48"
+				>
+					<mask id="ipSBookshelf0">
+						<path
+							fill="#fff"
+							stroke="#fff"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="4"
+							d="M5 6h34s4 2 4 7s-4 7-4 7H5s4-2 4-7s-4-7-4-7Zm38 22H9s-4 2-4 7s4 7 4 7h34s-4-2-4-7s4-7 4-7Z"
+						/>
+					</mask>
+					<path fill="white" d="M0 0h48v48H0z" mask="url(#ipSBookshelf0)" />
+				</svg>
+				<h1>PERPUS</h1>
+			</a>
+			<ul class="menu-navbar">
+				<li>
+					<a class="active" href="#home">HOME</a>
+				</li>
+				<li>
+					<a href="#library">LIBRARY</a>
+				</li>
+				<li>
+					<a href="#info">INFO</a>
+				</li>
+				<li>
+					<a href="#register">REGISTER</a>
+				</li>
+			</ul>
+		</div>
+		<div class="home" id="home">
+			<div class="left">
+				<div class="tittle">PERPUSTAKAAN</div>
+				<div class="desc">
+					Menyediakan bentuk buku, media digital, dan sumber daya lainnya, akses
+					ke bahan cetak, tetapi juga teknologi terkini, layanan internet,
+					kelas, dan acara yang mendukung pembelajaran dan penelitian. Bertujuan
+					untuk menginspirasi inovasi, penemuan, serta meningkatkan literasi dan
+					kualitas hidup komunitas yang mereka layani.
+				</div>
+			</div>
+			<div class="right">
+				<svg
+					class="iconBg"
+					width="885"
+					height="858"
+					viewBox="0 0 885 858"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<ellipse
+						cx="292.831"
+						cy="324.422"
+						rx="292.831"
+						ry="292.817"
+						fill="#00A8E8"
+					/>
+					<ellipse
+						cx="469.459"
+						cy="565.183"
+						rx="292.831"
+						ry="292.817"
+						fill="#00A8E8"
+					/>
+					<ellipse
+						cx="592.169"
+						cy="292.817"
+						rx="292.831"
+						ry="292.817"
+						fill="#00A8E8"
+					/>
+				</svg>
+				<svg
+					class="icon"
+					xmlns="http://www.w3.org/2000/svg"
+					width="40"
+					height="40"
+					viewBox="0 0 48 48"
+				>
+					<mask id="ipSBookshelf0">
+						<path
+							fill="#fff"
+							stroke="#fff"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="4"
+							d="M5 6h34s4 2 4 7s-4 7-4 7H5s4-2 4-7s-4-7-4-7Zm38 22H9s-4 2-4 7s4 7 4 7h34s-4-2-4-7s4-7 4-7Z"
+						/>
+					</mask>
+					<path fill="white" d="M0 0h48v48H0z" mask="url(#ipSBookshelf0)" />
+				</svg>
+			</div>
+		</div>
+		<div class="library" id="library">
+			<div id="library-navbar" class="library-navbar is-maximized">
+				<div class="top-section">
+					<h1>LIBRARY :</h1>
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input
+								class="sb-search-input"
+								onkeyup="buttonUp();"
+								placeholder="Search your comick . . ."
+								onblur="monkey();"
+								type="search"
+								value=""
+								name="search"
+								id="search"
+							/>
+							<input class="sb-search-submit" type="submit" value="" />
+							<span class="sb-icon-search"><i class="fa fa-search"></i></span>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="library-content">
+				<div class="library-content-section">
+					<div class="section-main" data-count="5">
+						<div class="card">
+							<div class="card__header">
+								<div class="saved">
+									<h3>SAVED</h3>
+								</div>
+							</div>
+							<div class="card__body">
+								<div class="card__body-tittle truncate">
+									Apex Future Martial Arts
+								</div>
+								<div class="card__body-description">
+									<div class="card__body-chapter truncate">2 Hours ago</div>
+									<div class="card__body-source truncate">Asurascans</div>
+								</div>
+								<div class="card__body-time truncate"></div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__header">
+								<div class="saved">
+									<h3>SAVED</h3>
+								</div>
+							</div>
+
+							<div class="card__body">
+								<div class="card__body-tittle truncate">
+									Apex Future Martial Arts
+								</div>
+								<div class="card__body-description">
+									<div class="card__body-chapter truncate">2 Hours ago</div>
+									<div class="card__body-source truncate">Asurascans</div>
+								</div>
+								<div class="card__body-time truncate"></div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__header">
+								<div class="saved">
+									<h3>SAVED</h3>
+								</div>
+							</div>
+
+							<div class="card__body">
+								<div class="card__body-tittle truncate">
+									Apex Future Martial Arts
+								</div>
+								<div class="card__body-description">
+									<div class="card__body-chapter truncate">2 Hours ago</div>
+									<div class="card__body-source truncate">Asurascans</div>
+								</div>
+								<div class="card__body-time truncate"></div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__header">
+								<div class="saved">
+									<h3>SAVED</h3>
+								</div>
+							</div>
+
+							<div class="card__body">
+								<div class="card__body-tittle truncate">
+									Apex Future Martial Arts
+								</div>
+								<div class="card__body-description">
+									<div class="card__body-chapter truncate">2 Hours ago</div>
+									<div class="card__body-source truncate">Asurascans</div>
+								</div>
+								<div class="card__body-time truncate"></div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__header">
+								<div class="saved">
+									<h3>SAVED</h3>
+								</div>
+							</div>
+
+							<div class="card__body">
+								<div class="card__body-tittle truncate">
+									Apex Future Martial Arts
+								</div>
+								<div class="card__body-description">
+									<div class="card__body-chapter truncate">2 Hours ago</div>
+									<div class="card__body-source truncate">Asurascans</div>
+								</div>
+								<div class="card__body-time truncate"></div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__header">
+								<div class="saved">
+									<h3>SAVED</h3>
+								</div>
+							</div>
+
+							<div class="card__body">
+								<div class="card__body-tittle truncate">
+									Apex Future Martial Arts
+								</div>
+								<div class="card__body-description">
+									<div class="card__body-chapter truncate">2 Hours ago</div>
+									<div class="card__body-source truncate">Asurascans</div>
+								</div>
+								<div class="card__body-time truncate"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="info" id="info">
+			<div class="left">
+				<div class="circle-list">
+					<div class="circle"></div>
+					<div class="circle"></div>
+					<div class="circle"></div>
+				</div>
+			</div>
+			<div class="right">
+				<h1>INFORMATION</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+					facilisi. Maecenas auctor enim a nulla vehicula, in fermentum odio
+					tristique. Curabitur eu nisi id purus pharetra aliquet. Fusce
+					venenatis ligula id ligula vulputate, ut pharetra urna semper.
+				</p>
+			</div>
+		</div>
+		<div class="footer" id="register">
+			<div class="register">
+				<form method="POST" class="content">
+					<div id="form-tittle">
+						<h1>REGISTER</h1>
+						<span></span>
+					</div>
+					<div class="content-input">
+						<div class="input">
+							<label for="name">Nama</label><br />
+							<input
+								class="fld"
+								placeholder="Masukkan Namamu"
+								id="name"
+								autocomplete="off"
+							/>
+						</div>
+						<div class="input">
+							<label for="nim">Alamat</label><br />
+							<input
+								class="fld"
+								placeholder="Masukkan Alamat mu"
+								id="nim"
+								autocomplete="off"
+							/>
+						</div>
+						<div class="input">
+							<label for="matkul">No Telepon (id)</label><br />
+							<input
+								class="fld"
+								placeholder="Masukkan No Telepon"
+								id="matkul"
+								utocomplete="off"
+							/>
+						</div>
+						<div class="input">
+							<label for="dosen">Email</label><br />
+							<input
+								class="fld"
+								placeholder="Masukkan Emailmu"
+								id="dosen"
+								autocomplete="off"
+							/>
+						</div>
+					</div>
+					<button class="btn" type="submit">SUBMIT</button>
+				</form>
+			</div>
+			<div class="location">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.640497203394!2d112.79296727409059!3d-7.281682092725551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa16cfc6f083%3A0x80eeb48974d69e31!2sPerpustakaan%20ITS!5e0!3m2!1sid!2sid!4v1697558005836!5m2!1sid!2sid"
+					width="600"
+					height="450"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+		</div>
+		<!-- script -->
+		<script src="JS/card.js"></script>
+		<script src="JS/search.js"></script>
+	</body>
+</html>

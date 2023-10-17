@@ -1,0 +1,100 @@
+.card {
+	display: block;
+	margin: 0;
+	width: 158px;
+	height: auto;
+	background-color: transparent;
+	border-radius: 10px;
+	box-shadow: 0 30 50 rgba(0, 0, 0, 0.2);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.card__header {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 225.71428px;
+	border-radius: 10px;
+	background-image: url("../images/manhwa.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	.saved {
+		position: absolute;
+		border-radius: 0 0 10px 10px;
+		bottom: 0;
+		background-color: #24ff00;
+		width: 100%;
+		height: 20%;
+		color: #ffff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: "Poppins", sans-serif;
+		font-weight: bolder;
+		letter-spacing: 0.2vw;
+	}
+	.additional-chapter {
+		position: absolute;
+		border-radius: 0 10px 10px 0;
+		top: 10%;
+		background-color: #9db2bf;
+		width: 30%;
+		height: 20%;
+		color: #ffff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: "Roboto", sans-serif;
+		font-weight: 600;
+		letter-spacing: 3px;
+	}
+}
+
+.card__body {
+	position: relative;
+	height: auto;
+	padding: 6px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: #fff;
+}
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.card__body-tittle {
+	font-family: "Roboto", sans-serif;
+	font-size: 15.8px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	width: 100%;
+}
+.card__body .card__body-description {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 11.2852px;
+	font-family: "Open Sans", sans-serif;
+	.card__body-chapter {
+		font-weight: 800;
+		color: #ffffffdd;
+	}
+	.card__body-source {
+		font-weight: 200;
+		color: #ffffffa4;
+	}
+}
+
+.card__body-time {
+	font-family: "Open Sans", sans-serif;
+	font-size: 12.4131px;
+	font-weight: 600;
+	width: 100%;
+	color: #ffffffe0;
+}

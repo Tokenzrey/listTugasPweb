@@ -1,0 +1,49 @@
+.footer {
+	position: relative;
+	margin: 0 1.3vw 20px 1.7vw;
+	padding: 20px 10px 20px 10px;
+	top: 16.5vh;
+	height: auto;
+	width: 96vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	.register {
+		#form-tittle h1 {
+			font-size: 40px;
+			color: #ffff;
+			margin: 0;
+		}
+		.content-input .input {
+			margin-bottom: 10px;
+		}
+		.content-input .input label {
+			font-family: "Montserrat", sans-serif;
+			font-weight: 300;
+			font-size: 25px;
+			color: #fff;
+		}
+		.content-input .input input {
+			color: #ffff;
+			font-size: 18px;
+			outline: none;
+			background-color: transparent;
+			border: 1px solid #ffff;
+			padding: 10px 10px;
+			border-radius: 30px;
+		}
+		.btn {
+			margin-top: 10px;
+			cursor: pointer;
+			background-color: var(--secondary-color);
+			outline: none;
+			border: none;
+			color: #fff;
+			letter-spacing: 1px;
+			padding: 7px 15px;
+			font-weight: 800;
+			font-size: 20px;
+			border-radius: 25px;
+		}
+	}
+}
